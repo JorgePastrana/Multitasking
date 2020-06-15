@@ -277,11 +277,11 @@ int kwait(int *status)
      }
   PROC *p = running->child;
   while(1){  
- printf("ciclo\n");
+ //printf("ciclo\n");
      while(p){
           PROC *q = p->sibling;
           if(p->status=ZOMBIE){
-	     printf("IF\n");
+	     //printf("IF\n");
              int ZPID = p->pid;
              status = &(p->exitCode);
              p->status=FREE;
